@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gatherwell</string>
+    <string name="title_activity_main">Gatherwell</string>
+    <string name="package_name">com.jaytechxlab.gatherwell</string>
+    <string name="custom_url_scheme">com.jaytechxlab.gatherwell</string>
+</resources>

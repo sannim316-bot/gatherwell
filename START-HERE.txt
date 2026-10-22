@@ -1,0 +1,62 @@
+GATHERWELL — ANDROID STUDIO PROJECT
+
+1. Extract this ZIP to C:\Users\LENOVO\gatherwell-app
+2. Open that folder in VS Code, then open a Command Prompt terminal.
+3. Run these one at a time:
+   npm install
+   npm run dev
+   (Open the Local URL to check the app. Ctrl+C stops the server.)
+   npm run android:sync
+   npm run android:open
+
+Android is already added. DO NOT run cap add android again.
+Requires Node 22.12+ and a current Android Studio compatible with Capacitor 8.
+If npm reports an unsupported Node version, update Node first.
+
+APP IDENTITY
+Name: Gatherwell
+Package: com.jaytechxlab.gatherwell
+Version: 1.0 (versionCode 1)
+Minimum Android: 7.0 / API 24
+Target: API 36
+This is a NEW app, not an update to Jovia, Dispatch or Evermore.
+
+COMMUNITY LINKS
+Open https://app-link-manager.vercel.app
+Add app: Gatherwell
+Unique app ID: gatherwell
+Save your HTTPS WhatsApp and Telegram links.
+If links are not configured, the app says Channel not yet configured.
+No credentials are stored in the app. It refreshes public link settings every 30 seconds while visible and when resumed/online, keeping last valid links offline.
+
+SIGN YOUR FIRST RELEASE
+Android Studio > Build > Generate Signed Bundle / APK > Android App Bundle.
+Create a NEW key specifically for Gatherwell, for example:
+C:\Users\LENOVO\Document\Androidkeys\gatherwell-upload.jks
+Alias: gatherwell-upload
+Choose your own password, save it privately, and back up the keystore outside the repository.
+Choose release and finish. Find the AAB using the completion notification's Locate link.
+Keep the same key for future Gatherwell uploads. Never commit signing keys or passwords.
+
+PLAY CONSOLE
+Create Gatherwell as a new app. Upload the AAB to testing first.
+Upload gatherwell-play-store-icon.png for the store icon.
+Take screenshots from the actual app; no fabricated download/review counts are included.
+The privacy contact is Jaytechxlab@gmail.com, matching your earlier app contact; confirm you control and monitor it before release. If changing it, update www/app.js and www/public/privacy.html, then rebuild and sync.
+Host www/public/privacy.html publicly for the Play Console privacy URL. A Vercel deployment of this project serves it at /privacy.html. Build command: npm run build. Output: dist. Root: folder containing package.json.
+Answer Data safety based on the final app and hosting you actually use; this source includes no ads, accounts or analytics. Native device testing and final Play declarations remain your responsibility. Approval is not guaranteed by adding features.
+
+INCLUDED FEATURES
+Six original guides; full reading view; search and categories; saved reads; personal dated plans with completion and removal; light/dark mode; local data deletion; privacy policy; managed social links; Android back handling; launcher icon.
+No push reminders, public user posting, real-time chat, real community events, cloud account sync or admin backend is claimed.
+
+CHECKS COMPLETED
+Production web build, native asset sync and DOM functional checks passed. A signed APK/AAB and device UI testing were not performed here because the required Android SDK is unavailable.
+
+SOURCE
+www/index.html: app shell
+www/style.css: responsive design
+www/app.js: content and features
+www/native.js: Android back behaviour and external browser
+www/public/privacy.html: public privacy policy
+android/: Android Studio project with the icon already installed
